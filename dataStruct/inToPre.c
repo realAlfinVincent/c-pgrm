@@ -58,8 +58,14 @@ void infixToPrefix(char *infix, char *prefix)
     
     for (int i = 0; infix[i]; i++)
     {
-        if (infix[i] == '(') infix[i] = ')';
-        else if (infix[i] == ')') infix[i] = '(';
+        if (infix[i] == '(')
+        {
+            infix[i] = ')';
+        }
+        else if (infix[i] == ')')
+        {
+            infix[i] = '(';
+        }
     }
     
     int j = 0;
