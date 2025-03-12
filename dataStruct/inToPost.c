@@ -49,7 +49,7 @@ void infixToPostfix(char *infix, char *postfix)
     initStack(&s);
     int i, j = 0;
 
-    for (i = 0; infix[i]; i++) // Loop until infix[i] != \0
+    for (i = 0; infix[i] != '\0'; i++)
     {
         if (isalnum(infix[i]))
         {
