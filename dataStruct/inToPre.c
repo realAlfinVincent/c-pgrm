@@ -56,7 +56,7 @@ void infixToPrefix(char *infix, char *prefix)
     initStack(&s);
     reverseString(infix);
     
-    for (int i = 0; infix[i]; i++)
+    for (int i = 0; infix[i]; i++) // Loop until infix[i] != \0
     {
         if (infix[i] == '(')
         {
